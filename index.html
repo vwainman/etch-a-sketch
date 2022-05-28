@@ -6,16 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Document</title>
+    <title>Etch-a-Sketch</title>
 </head>
 
 <body>
     <header>
     </header>
     <main>
-        <div class="sketch-grid"></div>
+        <div id="sketch-grid-settings">
+            <input id="size-slider" />
+            <input id="color-picker" type="color" value="#000000" />
+            <form>
+                <div class="radio-group">
+                    <input type="radio" id="color" name="selector"><label for="color">Color</label>
+                    <input type="radio" id="random" name="selector"><label for="random">Random</label>
+                    <input type="radio" id="eraser" name="selector"><label for="eraser">Eraser</label>
+                </div>
+            </form>
+
+            <button id="random-colors">Random Mode</button>
+            <button id="clear-grid">Clear Grid</button>
+
+        </div>
+        <div class="sketch-grid">
+            <div class="column">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </div>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+        </div>
     </main>
     <footer>
+        <p>
+            Copyright ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            Vincent Wainman
+        </p>
     </footer>
     <script src="scripts.js"></script>
 </body>

@@ -1,0 +1,16 @@
+li {
+    display: block;
+    min-width: 100px;
+    min-height: 100px;
+    text-align: center;
+    border: 0.5px solid #000;
+    margin: 0;
+}
+
+.sketch-grid {
+    display: flex;
+}
+
+main {
+    display: flex;
+}
