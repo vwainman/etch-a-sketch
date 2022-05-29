@@ -1,16 +1,97 @@
-li {
-    display: block;
-    min-width: 100px;
-    min-height: 100px;
-    text-align: center;
-    border: 0.5px solid #000;
+* {
+    padding: 0;
     margin: 0;
 }
 
-.sketch-grid {
+body {
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
 }
 
-main {
+header {
+    text-align: center;
+    font-size: 20px;
+    padding: 25px 0;
+}
+
+#sketch-grid-settings {
+    width: 200px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 0 10px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    border: 1px solid #353746;
+    border-radius: 25px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    margin-top: -8px;
+    background: #353746;
+}
+
+input[type='color'] {
+    -webkit-appearance: none;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%),
+        0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+input[type='color']:hover {
+    transform: scale(1.10);
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+#radio-group {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.radio-input {
+    display: none;
+}
+
+.radio-input:checked+.radio-label {
+    background-image: linear-gradient(298deg, #da2c4d, #f8ab37);
+}
+
+.radio-label {
+    padding: 8px 14px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #ffffff;
+    background: #353746;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
 }

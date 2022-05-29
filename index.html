@@ -11,38 +11,25 @@
 
 <body>
     <header>
+        <h1 id="title">Minimal Etch-a-Sketch</h1>
     </header>
     <main>
         <div id="sketch-grid-settings">
-            <input id="size-slider" />
+            <input id="size-slider" type="range" min="1" , max="100" , value="50" />
             <input id="color-picker" type="color" value="#000000" />
             <form>
-                <div class="radio-group">
-                    <input type="radio" id="color" name="selector"><label for="color">Color</label>
-                    <input type="radio" id="random" name="selector"><label for="random">Random</label>
-                    <input type="radio" id="eraser" name="selector"><label for="eraser">Eraser</label>
+                <div id="radio-group">
+                    <input class="radio-input" type="radio" value="Random" id="random" name="selected"><label
+                        class="radio-label" for="random">Random</label>
+                    <input class="radio-input" type="radio" value="Color" id="color" name="selected" checked><label
+                        class="radio-label" for="color">Color</label>
+                    <input class="radio-input" type="radio" value="Eraser" id="eraser" name="selected"><label
+                        class="radio-label" for="eraser">Eraser</label>
                 </div>
             </form>
 
-            <button id="random-colors">Random Mode</button>
-            <button id="clear-grid">Clear Grid</button>
-
         </div>
-        <div class="sketch-grid">
-            <div class="column">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-            </div>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-            <li>11</li>
-            <li>12</li>
+        <div id="sketch-grid">
         </div>
     </main>
     <footer>
