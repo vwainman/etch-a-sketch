@@ -11,23 +11,26 @@
 
 <body>
     <header>
-        <h1 id="title">Minimal Etch-a-Sketch</h1>
+        <h1 class="title">Minimal </h1>
+        <h1>Etch-a-Sketch</h1>
     </header>
     <main>
         <div id="sketch-grid-settings">
-            <input id="size-slider" type="range" min="1" , max="100" , value="50" />
             <input id="color-picker" type="color" value="#000000" />
-            <form>
-                <div id="radio-group">
-                    <input class="radio-input" type="radio" value="Random" id="random" name="selected"><label
-                        class="radio-label" for="random">Random</label>
-                    <input class="radio-input" type="radio" value="Color" id="color" name="selected" checked><label
-                        class="radio-label" for="color">Color</label>
-                    <input class="radio-input" type="radio" value="Eraser" id="eraser" name="selected"><label
-                        class="radio-label" for="eraser">Eraser</label>
-                </div>
+            <div id="size-label">Pixels: 25 x 25</div>
+            <input id="size-slider" type="range" min="1" , max="100" , value="25" />
+            <form class="radio-group">
+                <input class="radio-input" type="radio" value="Click" id="click" name="selected" checked><label
+                    class="radio-label" for="click">Click</label>
+                <input class="radio-input" type="radio" value="Hover" id="hover" name="selected"><label
+                    class="radio-label" for="hover">Hover</label>
             </form>
-
+            <form class="radio-group">
+                <input class="radio-input" type="radio" value="User Colors" id="user-colors" name="selected"
+                    checked><label class="radio-label" for="user-colors">User Colors</label>
+                <input class="radio-input" type="radio" value="Random Colors" id="random-colors" name="selected"><label
+                    class="radio-label" for="random-colors">Random Colors</label>
+            </form>
         </div>
         <div id="sketch-grid">
         </div>
