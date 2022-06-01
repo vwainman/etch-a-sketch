@@ -1,5 +1,5 @@
 window.onload = () => {
-    newGrid(25);
+    newGrid(12);
 }
 
 const hexValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
@@ -13,7 +13,7 @@ const userRadio = document.getElementById('random-colors');
 const randomRadio = document.getElementById('user-colors');
 const clearBtn = document.getElementById('clear-btn');
 
-let currentSize = 25;
+let currentSize = 12;
 let colorMode = 'user';
 let currentColor = "#000000";
 let currentMode = 'click';
