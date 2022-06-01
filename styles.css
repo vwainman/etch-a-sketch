@@ -7,8 +7,9 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 25px;
 }
 
 header {
@@ -169,7 +170,8 @@ input[type="color"]::-webkit-color-swatch {
     body {
         margin: 0;
         height: 100%;
-        overflow: hidden
+        overflow: hidden;
+        gap: 20px;
     }
 
     main {
