@@ -14,7 +14,6 @@ body {
 
 header {
     font-size: 20px;
-    padding: 25px 0;
 }
 
 main {
@@ -160,10 +159,6 @@ input[type="color"]::-webkit-color-swatch {
 
     #sketch-grid-settings {
         gap: 20px;
-    }
-
-    header {
-        padding: 20px 0;
     }
 
     html,
