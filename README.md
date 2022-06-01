@@ -2,4 +2,4 @@
 
 Etch-a-Sketch utilizing vanilla javascript, css and html.
 
-[Live Demo](github.io/vwainman/etch-a-sketch)
+[Live Demo](vwainman.github.io/etch-a-sketch)
