@@ -141,7 +141,14 @@ input[type="color"]::-webkit-color-swatch {
         height: 150px;
     }
 
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden
+    }
+
     main {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
