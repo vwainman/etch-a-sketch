@@ -11,8 +11,9 @@ const clickRadio = document.getElementById('click');
 const hoverRadio = document.getElementById('hover');
 const userRadio = document.getElementById('random-colors');
 const randomRadio = document.getElementById('user-colors');
+const clearBtn = document.getElementById('clear-btn');
 
-let currentSize = 1;
+let currentSize = 25;
 let colorMode = 'user';
 let currentColor = "#000000";
 let currentMode = 'click';
@@ -31,6 +32,7 @@ clickRadio.onclick = () => updateCurrentMode('click');
 hoverRadio.onclick = () => updateCurrentMode('hover');
 randomRadio.onclick = () => updateColorMode('random');
 userRadio.onclick = () => updateColorMode('user');
+clearBtn.onclick = () => (newGrid(currentSize))
 
 function updateColorMode(mode) {
     if (mode === 'user') {
