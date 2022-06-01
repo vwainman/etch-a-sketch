@@ -39,7 +39,6 @@ main {
 }
 
 #slider {
-    width: 129px;
     display: flex;
     flex-direction: column;
 }
