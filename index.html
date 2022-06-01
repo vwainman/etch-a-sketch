@@ -11,14 +11,18 @@
 
 <body>
     <header>
-        <h1 class="title">Minimal </h1>
-        <h1>Etch-a-Sketch</h1>
+        <h1 class="title">Etch-a-Sketch</h1>
     </header>
     <main>
         <div id="sketch-grid-settings">
             <input id="color-picker" type="color" value="#000000" />
-            <div id="size-label">Pixels: 12 x 12</div>
-            <input id="size-slider" type="range" min="1" , max="100" , value="12" />
+            <div id="slider-clear">
+                <div id="slider">
+                    <p id="size-label">Pixels: 12 x 12</p>
+                    <input id="size-slider" type="range" min="1" max="100" value="12" />
+                </div>
+                <button type="button" id="clear-btn">Clear</button>
+            </div>
             <form class="radio-group">
                 <input class="radio-input" type="radio" value="Click" id="click" name="selected" checked><label
                     class="radio-label" for="click">Click</label>
@@ -31,7 +35,6 @@
                 <input class="radio-input" type="radio" value="Random Colors" id="random-colors" name="selected"><label
                     class="radio-label" for="random-colors">Random Colors</label>
             </form>
-            <button type="button" id="clear-btn">Clear</button>
         </div>
         <div id="sketch-grid">
         </div>

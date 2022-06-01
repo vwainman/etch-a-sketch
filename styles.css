@@ -32,8 +32,25 @@ main {
     padding: 0 10px;
 }
 
+#slider-clear {
+    display: flex;
+    height: 50px;
+    gap: 10px;
+}
+
+#slider {
+    width: 129px;
+    display: flex;
+    flex-direction: column;
+}
+
 #size-label {
-    margin-bottom: -20px;
+    height: 20px;
+    text-align: center;
+}
+
+#size-slider {
+    height: 20px;
 }
 
 input[type='range'] {
@@ -141,6 +158,14 @@ input[type="color"]::-webkit-color-swatch {
         height: 150px;
     }
 
+    #sketch-grid-settings {
+        gap: 20px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
     html,
     body {
         margin: 0;
@@ -150,5 +175,6 @@ input[type="color"]::-webkit-color-swatch {
 
     main {
         flex-direction: column-reverse;
+        gap: 20px;
     }
 }
